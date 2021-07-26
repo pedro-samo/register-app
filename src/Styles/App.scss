@@ -1,0 +1,50 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $dark-blue;
+  width: 100vw;
+  height: 100vh;
+
+  a {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $red;
+    padding: 10px 30px;
+    color: $red;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.02);
+      border: 2px solid white;
+      color: white;
+    }
+  }
+
+  .sessions{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .back{
+          width: 250px;
+          text-align: center;
+      }
+  }
+}
+
+
+
+ul,
+li {
+  list-style: none;
+}

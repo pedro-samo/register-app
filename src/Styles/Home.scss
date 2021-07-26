@@ -1,0 +1,45 @@
+@import "./variables.scss";
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+      color: $red;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    &-buttons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        a{
+            cursor: pointer;
+            background-color: transparent;
+            border: 2px solid $red;
+            padding: 10px 30px;
+            color: $red;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all .3s;
+
+            &:hover{
+                transform: scale(1.02);
+                border: 2px solid white;
+                color: white;
+            }
+        }
+    }
+  }
+}
